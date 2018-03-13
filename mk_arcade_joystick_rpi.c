@@ -126,7 +126,7 @@ static const int mk_max_arcade_buttons = 14;
 static const int mk_max_mcp_arcade_buttons = 16;
 
 struct gpio_config {
-    int mk_arcade_gpio_maps_custom[mk_max_arcade_buttons];
+    int mk_arcade_gpio_maps_custom[14];
     unsigned int nargs;
 };
 
@@ -151,7 +151,7 @@ struct mk_pad {
     enum mk_type type;
     char phys[32];
     int mcp23017addr;
-    int gpio_maps[mk_max_arcade_buttons]
+    int gpio_maps[14]
 };
 
 struct mk_nin_gpio {
